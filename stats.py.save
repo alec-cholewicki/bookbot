@@ -1,0 +1,21 @@
+def get_book_words(book_text):
+    words = book_text.split()
+    return len(words)
+def get_book_characters(book_text):
+    character_dict = {}
+    for character in book_text:
+        lowercased_character = character.lower()
+        if lowercased_character in character_dict:
+            character_dict[lowercased_character] += 1
+        else:
+            character_dict[lowercased_character] = 1
+    return character_dict
+def sort_dicts(dict):
+    dict_list = []
+    for character in dict:
+        character_placement=dict.(character)
+        dict_list.append({"char": "", "num": 0})
+        dict_list[character_placement]["char"] = character
+        dict_list[character_placement]["num"] = dict[character]
+    dict_list.sort(reverse=True, key=sort_on)
+    return dict_list
